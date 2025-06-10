@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: turquoise;
+    padding: 30px;
+}
+
+.link-header{
+    background-color: orange;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.link-nav{
+    color: black;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+li::before {
+    content: '🧠' 
+}
+
+
+li {
+    list-style-type: none;
+}
+
