@@ -112,6 +112,8 @@ p::after {
 
 .photos {
     display: flex;
+    padding: 30px;
+    /*flex-direction: column;*/
     justify-content: center; /* Center photos horizontally */
     align-items: center; /* Center photos vertically */
     margin-top: 100px;
