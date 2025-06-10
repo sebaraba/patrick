@@ -1,5 +1,22 @@
-body {
-    font-family: sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header {
@@ -32,14 +49,70 @@ a{
 .title-container {
     display: flex;
     justify-content: center;
+    font-size: 40px;
 }
 
-li::before {
-    content: '🧠' 
+p::before {
+    content: '\1F9D1';
+    margin-right: 10px;
 }
 
-
-li {
-    list-style-type: none;
+p::after {
+    content: '\1F4BB\1F9D1'; /* 💻🧑‍💻 */
+    margin-left: 10px;
 }
 
+.list {
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.custom-footer {
+    background-color: orange;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 100px;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; /* Center items horizontally */
+    background-color: aqua;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items within each section */
+}
+
+.creator-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center items within the creator details */
+}
+
+.footer-links a {
+    margin-bottom: 10px; /* Space between links */
+}
+
+.photos {
+    display: flex;
+    justify-content: center; /* Center photos horizontally */
+    align-items: center; /* Center photos vertically */
+    margin-top: 100px;
+}
