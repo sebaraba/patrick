@@ -58,7 +58,7 @@ p::before {
 }
 
 p::after {
-    content: '\1F4BB\1F9D1'; /* 💻🧑‍💻 */
+    content: '\1F4BB'; /*  */
     margin-left: 10px;
 }
 
